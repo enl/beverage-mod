@@ -1,0 +1,46 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+issueTrackerURL="http://github.com/enl/beverage-mod/issues"
+showAsResourcePack=false
+license="MIT"
+
+[[mods]]
+    modId="beverage"
+    version="1.16.5-0.0.1"
+    displayName="Beverage"
+    updateJSONURL="https://github.com/enl/beverage-mod/versions.json"
+    displayURL="https://github.com/enl/beverage-mod"
+    logoFile="assets/beverage/textures/logo.png"
+    authors="Alex Panshin"
+    description='''
+    Adds a bunch of recipes to make random beverages in Minecraft.
+    '''
+
+
+[[dependencies.beverage]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.beverage]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependecnies.beverage]]
+    modId="pamhc2crops"
+    mandatory=true
+    versionRand="[1.16.3-1.0.1]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependecnies.beverage]]
+    modId="pamhc2foodcore"
+    mandatory=true
+    versionRand="[1.16.3-1.0.1]"
+    ordering="NONE"
+    side="BOTH"
