@@ -1,0 +1,16 @@
+{
+  "type": "crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "result": {
+    "item": "beverage:wheat_malt",
+    "count": 1
+  },
+  "group": "wheat_malt"
+}
