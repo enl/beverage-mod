@@ -10,6 +10,7 @@ public class BeverageItems {
     private BeverageItems() {}
 
     public static Item wheatMalt;
+    public static Item wildYeast;
 
     @SubscribeEvent
     public static void registerAllItems(RegistryEvent.Register<Item> event)
@@ -17,6 +18,7 @@ public class BeverageItems {
         IForgeRegistry<Item> registry = event.getRegistry();
 
         wheatMalt = register(registry, "wheat_malt", new Item((new Properties()).group(BeverageMod.ITEM_GROUP)));
+        wildYeast = register(registry, "wild_yeast", new Item((new Properties()).group(BeverageMod.ITEM_GROUP)));
     }
 
     private static <T extends Item> T register(IForgeRegistry<Item> registry, String name, T item) {
