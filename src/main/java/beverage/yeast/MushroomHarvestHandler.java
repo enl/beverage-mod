@@ -1,6 +1,7 @@
 package beverage.yeast;
 
-import beverage.BeverageMod;
+import beverage.utils.Utils;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.block.Block;
 import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,6 +16,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.Random;
 
 /**
@@ -24,8 +26,11 @@ import java.util.Random;
  * TODO: https://mcforge.readthedocs.io/en/latest/items/globallootmodifiers/
  */
 @Mod.EventBusSubscriber
-public class MushroomHarvestHandler {
-    private static final ResourceLocation item = BeverageMod.getId("wild_yeast");
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
+public class MushroomHarvestHandler
+{
+    private static final ResourceLocation item = Utils.getResource("wild_yeast");
     private static final Double probability = 0.1;
 
 
@@ -39,7 +44,7 @@ public class MushroomHarvestHandler {
 
         Block brokenBlock = event.getState().getBlock();
         Block BrownMushroom = ForgeRegistries.BLOCKS.getValue(
-            new ResourceLocation("minecraft:brown_mushroom")
+            Utils.getVanillaResource("brown_mushroom")
         );
 
         if (BrownMushroom == null || !brokenBlock.matchesBlock(BrownMushroom)) {

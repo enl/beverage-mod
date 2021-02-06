@@ -33,7 +33,8 @@ public class Items
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
-    public static boolean isYeast(Item item) {
+    public static boolean isYeast(Item item)
+    {
         return item.equals(wildYeast.get()) || item.equals(yeast.get());
     }
 }
