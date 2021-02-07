@@ -1,6 +1,7 @@
 package beverage.registry;
 
 import beverage.BeverageMod;
+import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -8,6 +9,10 @@ import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
+import javax.annotation.ParametersAreNonnullByDefault;
+
+@ParametersAreNonnullByDefault
+@MethodsReturnNonnullByDefault
 public class Items
 {
     public static void init(IEventBus eventBus) {
@@ -30,6 +35,10 @@ public class Items
 
     public static final RegistryObject<Item> YEAST_FERMENTER = ITEMS.register("yeast_fermenter", () -> new BlockItem(
         Blocks.YEAST_FERMENTER.get(),
+        (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
+    ));
+
+    public static final RegistryObject<Item> HOPS_SEED = ITEMS.register("hops_seed", () -> new Item(
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
