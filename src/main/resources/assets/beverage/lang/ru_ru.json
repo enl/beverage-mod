@@ -1,7 +1,9 @@
 {
+  "block.beverage.hops_plant": "Хмель",
   "block.beverage.yeast_fermenter": "Размножитель дрожжей",
   "beverage.container.yeast_fermenter": "Размножитель дрожжей",
   "itemGroup.beverage": "Beverage",
+  "item.beverage.hops": "Хмель",
   "item.beverage.hops_seeds": "Семена хмеля",
   "item.beverage.wheat_malt": "Пшеничный солод",
   "item.beverage.wild_yeast": "Дикие дрожжи",

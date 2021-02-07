@@ -3,6 +3,7 @@ package beverage.registry;
 import beverage.BeverageMod;
 import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.BlockItem;
+import net.minecraft.item.BlockNamedItem;
 import net.minecraft.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
@@ -38,7 +39,12 @@ public class Items
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
-    public static final RegistryObject<Item> HOPS_SEEDS = ITEMS.register("hops_seeds", () -> new Item(
+    public static final RegistryObject<Item> HOPS_SEEDS = ITEMS.register("hops_seeds", () -> new BlockNamedItem(
+        Blocks.HOPS_PLANT.get(),
+        (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
+    ));
+
+    public static final RegistryObject<Item> HOPS = ITEMS.register("hops", () -> new Item(
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 

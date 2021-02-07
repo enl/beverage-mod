@@ -1,7 +1,9 @@
 {
+  "block.beverage.hops_plant": "Hops",
   "block.beverage.yeast_fermenter": "Yeast Fermenter",
   "beverage.container.yeast_fermenter": "Yeast Fermenter",
   "itemGroup.beverage": "Beverage",
+  "item.beverage.hops": "Hops",
   "item.beverage.hops_seeds": "Hops Seed",
   "item.beverage.wheat_malt": "Wheat Malt",
   "item.beverage.wild_yeast": "Wild Yeast",
