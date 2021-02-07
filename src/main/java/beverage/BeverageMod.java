@@ -17,7 +17,7 @@ public class BeverageMod
     public static final String MOD_ID = "beverage";
     public static final ItemGroup ITEM_GROUP = new BeverageItemGroup(
         MOD_ID,
-        () -> new ItemStack(Items.wheatMalt.get())
+        () -> new ItemStack(Items.WHEAT_MALT.get())
     );
 
     public BeverageMod()

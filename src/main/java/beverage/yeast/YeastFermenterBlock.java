@@ -1,6 +1,5 @@
 package beverage.yeast;
 
-import beverage.BeverageMod;
 import beverage.registry.TileEntities;
 import beverage.yeast.fermenter.YeastFermenterTileEntity;
 import mcp.MethodsReturnNonnullByDefault;
@@ -56,7 +55,7 @@ public class YeastFermenterBlock extends Block
     @Override
     public TileEntity createTileEntity(BlockState state, IBlockReader world)
     {
-        return TileEntities.yeastFermenter.get().create();
+        return TileEntities.YEAST_FERMENTER.get().create();
     }
 
     @Override

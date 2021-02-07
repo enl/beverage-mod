@@ -19,5 +19,5 @@ public class Blocks
 
     private static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, BeverageMod.MOD_ID);
 
-    public static RegistryObject<Block> yeastFermenter = BLOCKS.register("yeast_fermenter", YeastFermenterBlock::new);
+    public static final RegistryObject<Block> YEAST_FERMENTER = BLOCKS.register("yeast_fermenter", YeastFermenterBlock::new);
 }

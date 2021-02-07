@@ -17,8 +17,8 @@ public class TileEntities
 
     private static final DeferredRegister<TileEntityType<?>> TILE_ENTITIES = DeferredRegister.create(ForgeRegistries.TILE_ENTITIES, BeverageMod.MOD_ID);
 
-    public static final RegistryObject<TileEntityType<?>> yeastFermenter = TILE_ENTITIES.register(
+    public static final RegistryObject<TileEntityType<?>> YEAST_FERMENTER = TILE_ENTITIES.register(
         "yeast_fermenter",
-        () -> TileEntityType.Builder.create(YeastFermenterTileEntity::new, Blocks.yeastFermenter.get()).build(null)
+        () -> TileEntityType.Builder.create(YeastFermenterTileEntity::new, Blocks.YEAST_FERMENTER.get()).build(null)
     );
 }

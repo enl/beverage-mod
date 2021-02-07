@@ -20,7 +20,7 @@ public class Containers
 
     private static final DeferredRegister<ContainerType<?>> CONTAINERS = DeferredRegister.create(ForgeRegistries.CONTAINERS, BeverageMod.MOD_ID);
 
-    public static RegistryObject<ContainerType<YeastFermenterContainer>> YEAST_FERMENTER = CONTAINERS.register(
+    public static final RegistryObject<ContainerType<YeastFermenterContainer>> YEAST_FERMENTER = CONTAINERS.register(
         "yeast_fermenter",
         () -> IForgeContainerType.create(YeastFermenterContainer.factory)
     );

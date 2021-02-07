@@ -38,7 +38,7 @@ public class YeastFermenterTileEntity extends LockableLootTileEntity implements 
 
     public YeastFermenterTileEntity()
     {
-        this(TileEntities.yeastFermenter.get());
+        this(TileEntities.YEAST_FERMENTER.get());
     }
 
     public YeastFermenterTileEntity(TileEntityType<?> tileEntityType)
@@ -159,7 +159,7 @@ public class YeastFermenterTileEntity extends LockableLootTileEntity implements 
             for (int index: YeastFermenterContainer.OUTPUT_SLOTS) {
                 ItemStack stack = getStackInSlot(index);
                 if (stack.isEmpty()) {
-                    setInventorySlotContents(index, new ItemStack(Items.yeast.get(), OUTPUT_AMOUNT));
+                    setInventorySlotContents(index, new ItemStack(Items.YEAST.get(), OUTPUT_AMOUNT));
                     return;
                 }
 
