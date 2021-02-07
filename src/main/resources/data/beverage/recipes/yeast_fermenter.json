@@ -13,5 +13,6 @@
   "result": {
     "item": "beverage:yeast_fermenter",
     "count": 1
-  }
+  },
+  "group": "beverage"
 }
