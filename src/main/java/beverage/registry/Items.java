@@ -26,6 +26,10 @@ public class Items
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
+    public static final RegistryObject<Item> ROASTED_WHEAT_MALT = ITEMS.register("roasted_wheat_malt", () -> new Item(
+        (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
+    ));
+
     public static final RegistryObject<Item> WILD_YEAST = ITEMS.register("wild_yeast", () -> new Item(
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));

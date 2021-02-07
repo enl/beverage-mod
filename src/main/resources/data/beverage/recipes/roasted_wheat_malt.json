@@ -1,0 +1,11 @@
+{
+  "type": "smelting",
+  "group": "beverage",
+  "ingredient": {
+    "item": "beverage:wheat_malt"
+  },
+  "result": {
+    "item": "beverage:roasted_wheat_malt"
+  },
+  "experience": 0.1
+}
