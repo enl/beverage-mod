@@ -38,7 +38,7 @@ public class Items
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
-    public static final RegistryObject<Item> HOPS_SEED = ITEMS.register("hops_seed", () -> new Item(
+    public static final RegistryObject<Item> HOPS_SEEDS = ITEMS.register("hops_seeds", () -> new Item(
         (new Item.Properties()).group(BeverageMod.ITEM_GROUP)
     ));
 
